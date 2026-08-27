@@ -27,10 +27,10 @@ add_exclusion_reasons(pknca_data, exclusion_list)
   - exclude_nca: logical, if TRUE the rows are excluded from NCA
     calculations (added to the exclude column)
 
-  - exclude_tlg: logical, if TRUE the rows are flagged with PKSUM1F =
-    "Y" so TLGs can filter them out
+  - exclude_tlg: logical, if TRUE the rows are flagged with PKSUMXF =
+    "Y" and the reason is stored in PKSUM1RS so TLGs can filter them out
 
 ## Value
 
-The modified PKNCAdata object with updated exclusion reasons and PKSUM1F
-in the concentration object.
+The modified PKNCAdata object with updated exclusion reasons, PKSUMXF,
+and PKSUM1RS in the concentration object.
